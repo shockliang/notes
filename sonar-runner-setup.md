@@ -1,6 +1,6 @@
 ### Base Setup ###
 
-[Doc Reference](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
+  * [Analyzing with SonarQube Scanner for MSBuild](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+MSBuild)
 
 1. 將 C:\SonarQube\bin 設置路徑設為置環境變數
 
@@ -26,6 +26,9 @@ SonarQube.Scanner.MSBuild.exe end
 ```
 
 ### Integration with GitLab CI runner ###
+  * [Analyzing with SonarQube Scanner for Jenkins](https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner+for+Jenkins)
+  * [Analysis Parameters](https://docs.sonarqube.org/display/SONAR/Analysis+Parameters)
+
 1. 新增名為`analysis`的 stage 至 .gitlab-ci.yml 中。
 2. 以呼叫 bat 的方式放至 script section 中，使用方式跟 base setup 的方式一樣。其中`SonarQube.Scanner.MSBuild.exe` 已在 base setup 時被為環境變數的 path 之中。
 3. 參數說明：
